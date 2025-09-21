@@ -1,6 +1,6 @@
 #include "ft_list.h"
 
-void    ft_sorted_list_insert(t_list **begin_list, void *data, int (*cmp)()) {
+void    ft_sorted_list_insert(t_list **begin_list, void *data, int (*cmp)(void *, void *)) {
     t_list  *prev, *current;
 
     if (cmp((*begin_list)->data, data) > 0) {

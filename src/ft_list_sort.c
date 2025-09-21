@@ -13,7 +13,7 @@ t_list  *find_half_list(t_list *begin) {
     return half;
 }
 
-t_list  *merge_sort(t_list *node1, t_list *node2, int (*cmp)()) {
+t_list  *merge_sort(t_list *node1, t_list *node2, int (*cmp)(void *, void *)) {
     t_list  *node3;
 
     if (node1 == NULL)
